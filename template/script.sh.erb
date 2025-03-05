@@ -15,7 +15,6 @@ export XDG_CONFIG_HOME="<%= session.staged_root.join("config") %>"
 export XDG_DATA_HOME="<%= session.staged_root.join("share") %>"
 export XDG_CACHE_HOME="$(mktemp -d)"
 module restore
-set -x
 export $(dbus-launch)
 
 source /etc/os-release
@@ -42,5 +41,4 @@ fi
 
 # Launch VMD
 sleep 2
-set -x
 xfce4-terminal -e "$WRAPPER" -T "VMD Terminal" --disable-server

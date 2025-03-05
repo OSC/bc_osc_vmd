@@ -1,9 +1,5 @@
 <%-
-  args =  if cluster == 'owens'
-            [ "--partition", "quick", "--nodes", "1", "--ntasks-per-node", "1" ]
-          else
-            ["--gres", "vis", "--nodes", "1", "--ntasks-per-node", "1", "--gpus", "1"]
-          end
+  args = [ "--partition", "quick", "--nodes", "1", "--ntasks-per-node", "1" ]
 -%>
 ---
 batch_connect:
