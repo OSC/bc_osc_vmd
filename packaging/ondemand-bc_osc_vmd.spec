@@ -24,7 +24,7 @@ Requires: ondemand
 AutoReqProv: no
 
 %description
-A Batch Connect app designed for OSC OnDemand that launches VMD within an Owens batch job.
+A Batch Connect app designed for OSC OnDemand that launches VMD within a batch job.
 
 
 %prep
