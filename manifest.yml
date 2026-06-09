@@ -7,7 +7,7 @@ description: |
   This app will launch [VMD] on the [Cardinal cluster] using a **shared
   node**. You will be able to interact with the VMD GUI through a [VNC] session.
 
-  *Disclaimer:* This software is for **academic purpose** only. Please review
+  *Disclaimer:* This software is for **academic purposes** only. Please review
   the [license agreement] before you use this software.
 
   [VMD]: https://www.ks.uiuc.edu/Research/vmd/
