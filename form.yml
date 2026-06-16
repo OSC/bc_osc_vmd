@@ -2,19 +2,16 @@
 cluster:
   - "cardinal"
 form:
-  - version
+  - auto_modules_vmd
   - auto_accounts
   - bc_num_hours
   - bc_vnc_resolution
 attributes:
+  auto_modules_vmd:
+    default: false
+    filter: a
+    help: "This defines the version of VMD you want to load."
+    label: "VMD version"
   bc_vnc_resolution:
     required: true
-  version:
-    widget: select
-    label: "VMD version"
-    help: "This defines the version of VMD you want to load."
-    options:
-    - [
-        "1.9.4a55", "vmd/1.9.4a55",
-      ]
 
