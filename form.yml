@@ -9,7 +9,7 @@ form:
 attributes:
   auto_modules_vmd:
     default: false
-    filter: a
+    filter: "3"
     help: "This defines the version of VMD you want to load."
     label: "VMD version"
   bc_vnc_resolution:
