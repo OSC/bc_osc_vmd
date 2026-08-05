@@ -6,6 +6,7 @@ form:
   - auto_accounts
   - bc_num_hours
   - bc_vnc_resolution
+  - bc_email_on_started
 attributes:
   auto_modules_vmd:
     default: false
