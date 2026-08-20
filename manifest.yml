@@ -5,11 +5,12 @@ subcategory: GUIs
 role: batch_connect
 description: |
   This app will launch [VMD] on the [Cardinal cluster] using a **shared
-  node**. You will be able to interact with the VMD GUI through a VNC session.
+  node**. You will be able to interact with the VMD GUI through a [VNC] session.
 
-  *Disclaimer:* This software is for **academic purpose** only. Please review
+  *Disclaimer:* This software is for **academic purposes** only. Please review
   the [license agreement] before you use this software.
 
-  [VMD]: http://www.ks.uiuc.edu/Research/vmd/
+  [VMD]: https://www.ks.uiuc.edu/Research/vmd/
   [Cardinal cluster]: https://www.osc.edu/resources/technical_support/supercomputers/cardinal
-  [license agreement]: http://www.ks.uiuc.edu/Research/vmd/current/LICENSE.html
+  [VNC]: https://en.wikipedia.org/wiki/VNC
+  [license agreement]: https://www.ks.uiuc.edu/Research/vmd/current/LICENSE.html

@@ -2,9 +2,17 @@
 cluster:
   - "cardinal"
 form:
+  - auto_modules_vmd
   - auto_accounts
   - bc_num_hours
   - bc_vnc_resolution
+  - bc_email_on_started
 attributes:
+  auto_modules_vmd:
+    default: false
+    filter: "3"
+    help: "This defines the version of VMD you want to load."
+    label: "VMD version"
   bc_vnc_resolution:
     required: true
+
