@@ -1,11 +1,28 @@
 <%-
-  args = [ "--partition", "quick", "--nodes", "1", "--ntasks-per-node", "1" ]
 -%>
 ---
 batch_connect:
   template: vnc
 script:
+  # set GPUs
+  <%- if global_gpus.to_i > 0 -%>
+  gpus_per_node: <%= global_gpus %>
+  <%- end %>
   native:
-    <%- args.each do |arg| -%>
-    - "<%= arg %>"
-    <%- end -%>
+  # set CPUs
+  - "--ntasks-per-node"
+  - "<%= global_num_cores.to_i %>"
+  # set partition
+  - "--partition"
+  <%- if global_enable_debug.to_i == 1 -%>
+  - "debug"
+  <%- elsif global_gpus.to_i > 0 -%>
+  - "<%= global_gpu_type.split('-').drop(1).join('-') %>"
+  <%- else %>
+  - "batch"
+  <%- end %>
+  # set memory
+  <%- if global_enable_mem.to_i == 1  -%>
+  - "--mem"
+  - "<%= global_mem.to_i%>G"
+  <%- end %>
